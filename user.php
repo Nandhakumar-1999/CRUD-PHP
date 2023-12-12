@@ -6,7 +6,7 @@ if(isset($_POST['submit'])){
     $mobile=$_POST['mobile'];
     $password=$_POST['password'];
 
-    $sql="insert into user_information (name,email,mobile,password) values('$name','$email','$mobile','$password')";
+    $sql="INSERT INTO user_information (name,email,mobile,password) values('$name','$email','$mobile','$password')";
     $result=mysqli_query($con,$sql);
 
     if($result){

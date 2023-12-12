@@ -29,7 +29,7 @@ include "connection.php";
             <tbody>
 
                 <?php
-                $sql = "select * from user_information";
+                $sql = "SELECT * FROM user_information";
                 $result = mysqli_query($con, $sql);
                 if ($result) {
                     while ($row = mysqli_fetch_assoc($result)) {
